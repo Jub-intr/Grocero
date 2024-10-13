@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208456368226",
+    "project_id": "grocero-e7c29",
+    "storage_bucket": "grocero-e7c29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208456368226:android:ae488f6ef2558c26fc913b",
+        "android_client_info": {
+          "package_name": "com.jubutech.grocery_2402"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUod-ajFuRFgpk1pJjWI6FQDq1hVQVLCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/fragment_add_grocery"
+        android:name="com.jubutech.grocery_2402.fragment_add_grocery"
+        android:label="fragment_add_grocery"
+        tools:layout="@layout/fragment_add_grocery" >
+        <action
+            android:id="@+id/action_fragment_add_grocery_to_fragment_grocery_list"
+            app:destination="@id/fragment_grocery_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_grocery_list"
+        android:name="com.jubutech.grocery_2402.fragment_grocery_list"
+        android:label="fragment_grocery_list"
+        tools:layout="@layout/fragment_grocery_list" />
+    <fragment
+        android:id="@+id/sign_In_Fragment"
+        android:name="com.jubutech.grocery_2402.Sign_In_Fragment"
+        android:label="fragment_sign__in_"
+        tools:layout="@layout/fragment_sign__in_" >
+        <action
+            android:id="@+id/action_sign_In_Fragment_to_fragment_add_grocery"
+            app:destination="@id/fragment_add_grocery" />
+        <action
+            android:id="@+id/action_sign_In_Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jubutech.grocery_2402.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_sign_In_Fragment"
+            app:destination="@id/sign_In_Fragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_fragment_add_grocery"
+            app:destination="@id/fragment_add_grocery" />
+        <action
+            android:id="@+id/action_loginFragment_to_sign_In_Fragment2"
+            app:destination="@id/sign_In_Fragment" />
+    </fragment>
+
+</navigation>
